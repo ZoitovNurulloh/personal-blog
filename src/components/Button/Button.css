@@ -1,0 +1,13 @@
+.btn {
+  display: inline-block;
+  background-color: var(--neutral-100);
+  padding: 14px;
+  border: 1px solid var(--neutral-200);
+  border-radius: 8px;
+}
+
+.btn-img {
+  width: 14px;
+  height: 14px;
+  display: block;
+}
