@@ -122,11 +122,12 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #fff;
-  color: #222;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  background-color: var(--neutral-0);
+  color: var(--neutral-600);
+  font-family: var(--dm-sans);
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.2px;
 }
 
 img {
