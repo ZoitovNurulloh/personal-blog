@@ -1,40 +1,57 @@
-import './App.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import MainLayouts from './MainLayouts/MainLayouts';
-import Home from './pages/Home/Home';
-import About from './pages/About/About';
-import Blog from './pages/Blog/Blog';
-import Newsletter from './pages/NewsLetter/Newsletter';
-
+import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import MainLayouts from "./layaout/MainLayouts/MainLayouts";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Blog from "./pages/Blog/Blog";
+import Newsletter from "./pages/NewsLetter/Newsletter";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const darkModeToggle = () => {
+    setDarkMode((prev) => !prev);
+  };
+
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [darkMode]);
+
   const routes = createBrowserRouter([
     {
       path: "/",
-      element: <MainLayouts/>,
+      element: (
+        <MainLayouts darkModeToggle={darkModeToggle} darkMode={darkMode} />
+      ),
       children: [
         {
           index: true,
-          element:<Home/>
+          element: <Home />,
         },
         {
-          path:"/about",
-          element:<About/>
+          path: "/about",
+          element: <About />,
         },
         {
-          path:"/blog",
-          element:<Blog/>
+          path: "/blog",
+          element: <Blog />,
         },
         {
-          path:"/newsletter",
-          element:<Newsletter/>
-        }
+          path: "/newsletter",
+          element: <Newsletter />,
+        },
       ],
-    }
-  ])
+    },
+  ]);
   return (
-    <RouterProvider router={routes}/>
-  )
+      <RouterProvider router={routes} />
+
+  );
 }
 
-export default App
+export default App;

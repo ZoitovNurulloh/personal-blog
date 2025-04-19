@@ -68,7 +68,7 @@
 :root {
   /* FONTS */
   --dm-sans:'DM Sans', "Arial", sans-serif;
-  --fira-code: "Fira Code", "Arial", sans-serif
+  --fira-code: "Fira Code", "Arial", sans-serif;
 
   /* COLORS */
   --neutral-900:rgb(28, 26, 25);
@@ -102,6 +102,12 @@
 
 }
 
+.dark {
+  --neutral-0:rgb(28, 26, 25);
+  --neutral-600:rgb(192, 191, 191);
+
+}
+
 
 /* GLOBAL */
 
@@ -125,6 +131,8 @@ body {
   line-height: 150%;
   letter-spacing: -0.2px;
 }
+
+
 
 .root {
   display: flex;
