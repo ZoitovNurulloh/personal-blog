@@ -5,29 +5,30 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Blog from "./pages/Blog/Blog";
 import Newsletter from "./pages/NewsLetter/Newsletter";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  // const [darkMode, setDarkMode] = useState(true);
 
-  const darkModeToggle = () => {
-    setDarkMode((prev) => !prev);
-  };
 
-  useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add("dark");
-    } else {
-      document.body.classList.remove("dark");
-    }
-  }, [darkMode]);
+  // console.log(darkMode)
+
+  // useEffect(() => {
+  //   if (darkMode) {
+  //     document.body.classList.add("dark");
+  //   } else {
+  //     document.body.classList.remove("dark");
+  //   }
+  // }, [darkMode]);
+
+  // function darkModeToggle() {
+  //   setDarkMode(prev => !prev)
+  // }
 
   const routes = createBrowserRouter([
     {
       path: "/",
-      element: (
-        <MainLayouts darkModeToggle={darkModeToggle} darkMode={darkMode} />
-      ),
+      element: <MainLayouts />,
       children: [
         {
           index: true,
@@ -49,8 +50,9 @@ function App() {
     },
   ]);
   return (
+    <>
       <RouterProvider router={routes} />
-
+    </>
   );
 }
 
