@@ -66,7 +66,42 @@
 
 
 /* CUSTOM PROPS */
+:root {
+  /* FONTS */
+  --dm-sans:'DM Sans', "Arial", sans-serif;
+  --fira-code: "Fira Code", "Arial", sans-serif
 
+  /* COLORS */
+  --neutral-900:rgb(28, 26, 25);
+  --neutral-800:rgb(32, 30, 29);
+  --neutral-700:rgb(52, 48, 45);
+  --neutral-600:rgb(74, 72, 70);
+  --neutral-400:rgb(192, 191, 191);
+  --neutral-300:rgb(222, 220, 218);
+  --neutral-200:rgb(239, 237, 235);
+  --neutral-100:rgb(251, 249, 247);
+  --neutral-0:rgb(255,255,255);
+
+  --blue-900:rgb(2, 43, 74);
+  --blue-800:rgb(87, 146, 192);
+  --blue-700:rgb(117, 176, 222);
+  --blue-500:rgb(147, 206, 252);
+  --blue-200:rgb(225, 241, 254);
+
+  --green-900:rgb(19, 42, 24);
+  --green-700:rgb(0, 133, 49);
+  --green-500:rgb(157, 211, 169);
+  --green-200:rgb(233, 245, 234);
+
+  --yellow-900:rgb(74, 48, 3);
+  --yellow-700:rgb(234, 152, 6);
+  --yellow-500:rgb(250, 204, 121);
+  --yellow-200:rgb(255, 245, 225);
+
+  --red-600:rgb(217, 45, 32);
+  --red-400:rgb(240, 68, 56);
+
+}
 
 
 /* GLOBAL */
