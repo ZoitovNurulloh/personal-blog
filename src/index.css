@@ -102,13 +102,6 @@
 
 }
 
-.dark {
-  --neutral-0:rgb(28, 26, 25);
-  --neutral-600:rgb(192, 191, 191);
-
-}
-
-
 /* GLOBAL */
 
 html {
@@ -124,7 +117,7 @@ html {
 }
 
 body {
-  background-color: var(--neutral-0);
+  background-color: var(--neutral-100);
   color: var(--neutral-600);
   font-family: var(--dm-sans);
   font-size: 18px;
@@ -132,6 +125,13 @@ body {
   letter-spacing: -0.2px;
 }
 
+.dark {
+  --neutral-100: var(--neutral-900);
+  --neutral-600: var(--neutral-400);
+  --neutral-0: var(--neutral-800);
+  --neutral-200:var(--neutral-700);
+  --neutral-700:var(--neutral-200);
+}
 
 
 .root {
