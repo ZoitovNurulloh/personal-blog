@@ -1,0 +1,30 @@
+.nav-footer__list{
+  display: flex;
+  align-items: center;
+}
+
+.nav-footer__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--neutral-0);
+  border: 1px solid var(--neutral-200);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nav-footer__item:hover {
+  border: 1px solid var(--neutral-300);
+  background-color: var(--neutral-200);
+}
+
+.nav-footer__item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.nav-footer__logo {
+  display: block;
+  color: var(--neutral-700);
+}
