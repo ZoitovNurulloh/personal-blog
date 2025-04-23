@@ -1,0 +1,38 @@
+.article {
+  margin-bottom: 48px;
+}
+
+.article__list:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.article__link {
+  display: flex;
+  flex-direction: column;
+}
+
+.article__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+  color: var(--neutral-700);
+}
+
+.article__date {
+  font-size: 16px;
+  line-height: 130%;
+  font-style: italic;
+  letter-spacing: -0.2px;
+  color: var(--neutral-600);
+}
+
+.article__date--mr {
+  margin-bottom: 8px;
+}
+
+.article__link:hover .article__title {
+  text-decoration: underline;
+  opacity: 0.7;
+}
