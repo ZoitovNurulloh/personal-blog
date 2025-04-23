@@ -71,11 +71,11 @@
   --fira-code: "Fira Code", "Arial", sans-serif;
 
   /* COLORS */
-  --neutral-900:rgb(28, 26, 25);
-  --neutral-800:rgb(32, 30, 29);
+  /* --neutral-900:rgb(28, 26, 25); */
+  /* --neutral-800:rgb(32, 30, 29); */
   --neutral-700:rgb(52, 48, 45);
   --neutral-600:rgb(74, 72, 70);
-  --neutral-400:rgb(192, 191, 191);
+  /* --neutral-400:rgb(192, 191, 191); */
   --neutral-300:rgb(222, 220, 218);
   --neutral-200:rgb(239, 237, 235);
   --neutral-100:rgb(251, 249, 247);
@@ -83,7 +83,7 @@
 
   --blue-900:rgb(2, 43, 74);
   --blue-800:rgb(87, 146, 192);
-  --blue-700:rgb(117, 176, 222);
+  /* --blue-700:rgb(117, 176, 222); */
   --blue-500:rgb(147, 206, 252);
   --blue-200:rgb(225, 241, 254);
 
@@ -117,6 +117,7 @@ html {
 }
 
 body {
+  height: 100%;
   background-color: var(--neutral-100);
   color: var(--neutral-600);
   font-family: var(--dm-sans);
@@ -126,11 +127,12 @@ body {
 }
 
 .dark {
-  --neutral-100: var(--neutral-900);
-  --neutral-600: var(--neutral-400);
-  --neutral-0: var(--neutral-800);
-  --neutral-200:var(--neutral-700);
-  --neutral-700:var(--neutral-200);
+  --neutral-100: rgb(28, 26, 25);
+  --neutral-600: rgb(192, 191, 191);
+  --neutral-0: rgb(32, 30, 29);
+  --neutral-200:rgb(52, 48, 45);
+  --neutral-700:#fefefe;
+  --blue-500:rgb(117, 176, 222);
 }
 
 
