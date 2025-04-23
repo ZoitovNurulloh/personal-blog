@@ -15,8 +15,8 @@ const Nav = () => {
 
         <nav className="header__nav">
           <NavLink className="header__link" to="/">Home</NavLink>
-          <NavLink className="header__link" to="/about">About</NavLink>
           <NavLink className="header__link" to="/blog">Blog</NavLink>
+          <NavLink className="header__link" to="/about">About</NavLink>
           <NavLink className="header__link" to="/newsletter">Newsletter</NavLink>
         </nav>
         <Button  />
