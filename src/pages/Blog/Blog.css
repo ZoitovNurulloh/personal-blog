@@ -1,0 +1,17 @@
+.blog-wrapper {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--neutral-200);
+}
+
+.blog-title {
+  font-size: 32px;
+  line-height: 130%;
+  color: var(--neutral-700);
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+.blog__info {
+  margin-bottom: 24px;
+  letter-spacing: -0.2px;
+}
