@@ -17,6 +17,17 @@ const Articles = ({detailed}) => {
       )
     }
   })}
+  {detailed && articles.map((article, ind) => {
+    return (
+      <div className="article__list article__list--br" key={ind}>
+        <a href="#" className='article__link'>
+          <h2 className="article__title">{article.title}</h2>
+          <p className='article__date article__date--mr'>{article.date}</p>
+          <p className='article__summary'>{article.summary}</p>
+        </a>
+      </div>
+    )
+  })}
   </div>
 )
 }
