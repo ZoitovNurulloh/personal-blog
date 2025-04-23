@@ -28,3 +28,14 @@
   display: block;
   color: var(--neutral-700);
 }
+
+.footer .nav-footer__logo {
+  color: var(--neutral-600);
+}
+
+.footer .nav-footer__item {
+  background-color: transparent;
+  border: none;
+  width: 18px;
+  height: 16px;
+}
