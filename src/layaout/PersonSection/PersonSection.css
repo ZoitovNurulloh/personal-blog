@@ -1,0 +1,35 @@
+
+.person-info--wrapper {
+  padding: 48px 0;
+  border-bottom: 1px solid var(--neutral-200);
+}
+
+.person-info__title {
+  font-weight: 800;
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+  font-size: 32px;
+  line-height: 130%;
+  color: var(--neutral-700);
+  margin-bottom: 28px;
+}
+
+.person-info__title::before {
+  position: absolute;
+  content: "";
+  bottom: 3px;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  z-index: -5;
+  background-color: var(--blue-500);
+}
+
+.person-info__introduction{
+  margin-bottom: 24px;
+}
+
+.person-info__intro:not(:last-child) {
+  margin-bottom: 24px;
+}
