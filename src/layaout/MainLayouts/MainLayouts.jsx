@@ -7,7 +7,6 @@ const MainLayouts = () => {
     <>
       <Nav />
       <main className="main-content">
-
         <Outlet />
       </main>
       <Footer />
